@@ -1,0 +1,12 @@
+<h3>Here are all the compact disks for this artist:</h3>
+
+<ol>
+@foreach (var compactDisk in @Model["compactDisks"])
+{
+  <li><a href='/artists/@Model["artist"].GetId()/compactDisks/@compactDisk.GetId()'>@compactDisk.GetTitle()</a></li>
+}
+</ol>
+
+<p><a href='/artists/@Model["artist"].GetId()/compactDisks/new'>Add a new compact disk</a></p>
+<p><a href='/artists'>Return to artist list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

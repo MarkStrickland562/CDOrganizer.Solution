@@ -1,0 +1,8 @@
+<h1>Add a new compact disk to @Model.GetName()</h1>
+
+<form action='/artists/@Model.GetId()/compactDisks' method='post'>
+  <input id='artistId' name='artistId' type='hidden' value='@Model.GetId()'>
+  <label for='compactDiskTitle'>Compact Disk Title</label>
+  <input id='compactDiskTitle' name='compactDiskTitle' type='text'>
+  <button type='submit'>Add compact disk</button>
+</form>
